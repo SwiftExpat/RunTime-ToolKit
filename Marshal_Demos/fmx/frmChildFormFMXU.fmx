@@ -1,0 +1,91 @@
+object frmChildFormFMX: TfrmChildFormFMX
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  inline FramedFMX1: TFramedFMX
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    inherited GridPanelLayout1: TGridPanelLayout
+      Size.Width = 640.000000000000000000
+      Size.Height = 480.000000000000000000
+      ControlCollection = <
+        item
+          Column = 0
+          Control = FramedFMX1.Edit1
+          Row = 0
+        end
+        item
+          Column = 1
+          Control = FramedFMX1.Button1
+          Row = 0
+        end
+        item
+          Column = 0
+          ColumnSpan = 2
+          Control = FramedFMX1.FrameSubFramedFXM1
+          Row = 1
+        end>
+      inherited Edit1: TEdit
+        Position.X = 110.000000000000000000
+        Position.Y = 109.000000000000000000
+      end
+      inherited Button1: TButton
+        Position.X = 440.000000000000000000
+        Position.Y = 109.000000000000000000
+      end
+      inherited FrameSubFramedFXM1: TFrameSubFramedFXM
+        Size.Width = 640.000000000000000000
+        Size.Height = 240.000000000000000000
+        inherited GridPanelLayout1: TGridPanelLayout
+          Size.Width = 640.000000000000000000
+          Size.Height = 240.000000000000000000
+          ControlCollection = <
+            item
+              Column = 0
+              Control = FramedFMX1.FrameSubFramedFXM1.Label1
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = FramedFMX1.FrameSubFramedFXM1.Button1
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = FramedFMX1.FrameSubFramedFXM1.Edit1
+              Row = 1
+            end
+            item
+              Column = 1
+              Control = FramedFMX1.FrameSubFramedFXM1.CheckBox1
+              Row = 1
+            end>
+          inherited Label1: TLabel
+            Position.X = 120.000000000000000000
+            Position.Y = 51.500000000000000000
+          end
+          inherited Button1: TButton
+            Position.X = 440.000000000000000000
+            Position.Y = 49.000000000000000000
+          end
+          inherited Edit1: TEdit
+            Position.X = 120.000000000000000000
+            Position.Y = 169.000000000000000000
+          end
+          inherited CheckBox1: TCheckBox
+            Position.X = 440.000000000000000000
+            Position.Y = 170.500000000000000000
+          end
+        end
+      end
+    end
+  end
+end

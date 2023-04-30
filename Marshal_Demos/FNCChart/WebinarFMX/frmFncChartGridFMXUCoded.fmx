@@ -1,0 +1,29 @@
+object frmFmxMarshalCodedOptions: TfrmFmxMarshalCodedOptions
+  Left = 0
+  Top = 0
+  Caption = 'FMX Marshal Options via 3 clicks on chart legend item'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    HitTest = True
+    Position.X = 384.000000000000000000
+    Position.Y = 328.000000000000000000
+    Text = 'Marshal Defaults'
+    Visible = False
+    TabOrder = 0
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    HitTest = True
+    Position.X = 384.000000000000000000
+    Position.Y = 360.000000000000000000
+    Text = 'Marshal Options'
+    Visible = False
+    TabOrder = 1
+    OnClick = Label2Click
+  end
+end

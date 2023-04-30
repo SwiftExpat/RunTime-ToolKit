@@ -1,0 +1,18 @@
+object frmFncChartMarshalButton: TfrmFncChartMarshalButton
+  Left = 0
+  Top = 0
+  Caption = 'FMX Marshal started via button'
+  ClientHeight = 656
+  ClientWidth = 884
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnResize = FormResize
+  DesignerMasterStyle = 0
+  object SERTTKMarshal1: TSERTTKMarshal
+    Anchors = [akTop, akRight]
+    Position.X = 712.000000000000000000
+    TabOrder = 0
+    Text = 'Marshal'
+  end
+end

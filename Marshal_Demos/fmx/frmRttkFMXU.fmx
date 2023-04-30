@@ -1,0 +1,461 @@
+object frmRTTKFMX: TfrmRTTKFMX
+  Left = 0
+  Top = 0
+  Caption = 'RTTK FMX Sample'
+  ClientHeight = 480
+  ClientWidth = 380
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object lytTools: TLayout
+    Align = Top
+    Size.Width = 380.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object SERTTKMarshal1: TSERTTKMarshal
+      Align = Left
+      Size.Width = 80.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Marshal'
+    end
+    object btnChildForm: TButton
+      Align = Right
+      Position.X = 300.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'btnChildForm'
+      OnClick = btnChildFormClick
+    end
+    object btnNewDM: TButton
+      Align = Right
+      Position.X = 220.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'btnNewDM'
+      OnClick = btnNewDMClick
+    end
+  end
+  object tcWorkSpace: TTabControl
+    Align = Client
+    Size.Width = 380.000000000000000000
+    Size.Height = 456.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 4
+    TabOrder = 1
+    TabPosition = PlatformDefault
+    Sizes = (
+      380s
+      430s
+      380s
+      430s
+      380s
+      430s
+      380s
+      430s
+      380s
+      430s)
+    object tiLabel: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 75.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Label & Edit'
+      ExplicitSize.cx = 75.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object ListBox1: TListBox
+        Align = Left
+        Size.Width = 200.000000000000000000
+        Size.Height = 430.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 196.000000000000000000
+        Viewport.Height = 426.000000000000000000
+        object ListBoxGroupHeader1: TListBoxGroupHeader
+          TextSettings.Font.StyleExt = {04070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          StyledSettings = [Family, Size, FontColor]
+          TabOrder = 2
+          Text = 'Label - no alignment'
+        end
+        object ListBoxItem1: TListBoxItem
+          Position.Y = 19.000000000000000000
+          Size.Width = 196.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label1: TLabel
+            Align = Right
+            StyledSettings = [Family, Style, FontColor]
+            Position.X = 76.000000000000000000
+            Size.Width = 120.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 24.000000000000000000
+            TextSettings.VertAlign = Leading
+            Text = 'Fox Jump Status'
+            TabOrder = 0
+          end
+        end
+        object ListBoxGroupFooter1: TListBoxGroupFooter
+          Position.Y = 67.000000000000000000
+          Size.Width = 196.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = 'fix by setting alignment to client and adjust the font size'
+        end
+        object ListBoxGroupHeader2: TListBoxGroupHeader
+          TextSettings.Font.StyleExt = {04070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          StyledSettings = [Family, Size, FontColor]
+          Position.Y = 115.000000000000000000
+          TabOrder = 3
+          Text = 'Edit too small'
+        end
+        object ListBoxItem2: TListBoxItem
+          Position.Y = 134.000000000000000000
+          TabOrder = 1
+          object Edit1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Center
+            TabOrder = 1
+            Text = 'The Quick Brown Fox Jumped over the lazy moon'
+            TextSettings.HorzAlign = Trailing
+            OnChange = Edit1Change
+          end
+        end
+        object ListBoxGroupFooter2: TListBoxGroupFooter
+          Position.Y = 153.000000000000000000
+          Size.Width = 196.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = 'Fix: Edit1.Align = Client & Listbox1.width=300'
+        end
+      end
+    end
+    object tiIfDef: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 72.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'If Defined'
+      ExplicitSize.cx = 72.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object CalloutRectangle1: TCalloutRectangle
+        Align = Center
+        Size.Width = 160.000000000000000000
+        Size.Height = 220.000000000000000000
+        Size.PlatformDefault = False
+        CalloutWidth = 23.000000000000000000
+        CalloutLength = 11.000000000000000000
+        object lblAppHelp: TLabel
+          Align = Top
+          HitTest = True
+          Margins.Top = 24.000000000000000000
+          Position.Y = 24.000000000000000000
+          Size.Width = 160.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Center
+          Text = 'Application Help'
+          TabOrder = 0
+          OnClick = lblAppHelpClick
+        end
+        object btnMarshal: TButton
+          Align = Bottom
+          Position.Y = 198.000000000000000000
+          Size.Width = 160.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Marshal'
+          OnClick = btnMarshalClick
+        end
+      end
+      object Panel1: TPanel
+        Position.X = 16.000000000000000000
+        Position.Y = 344.000000000000000000
+        Size.Width = 281.000000000000000000
+        Size.Height = 79.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object cbLeakObjects: TCheckBox
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 0
+          Text = 'Leak Objects'
+          OnChange = cbLeakObjectsChange
+        end
+        object cbStallShutdown: TCheckBox
+          Position.X = 8.000000000000000000
+          Position.Y = 52.000000000000000000
+          TabOrder = 1
+          Text = 'Stall Shutdown'
+          OnChange = cbStallShutdownChange
+        end
+        object edtShutdownStall: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 2
+          Text = '2500'
+          Position.X = 136.000000000000000000
+          Position.Y = 49.000000000000000000
+          TextPrompt = '#####'
+        end
+      end
+    end
+    object tiRunTimeComp: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 73.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'RT Comps'
+      ExplicitSize.cx = 74.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object pnlRTCompButtons: TPanel
+        Align = Top
+        Size.Width = 380.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object btnAddMemo: TCornerButton
+          Align = Left
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 80.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Add Memo'
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+          OnClick = btnAddMemoClick
+        end
+        object btnDeleteMemo: TSpeedButton
+          Align = Right
+          Position.X = 300.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Delete Memo'
+          OnClick = btnDeleteMemoClick
+        end
+      end
+      object memoRTCompFooter: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Lines.Strings = (
+          'Clcik on Add Memo to create a memo in the client area at runtime'
+          'Refresh the tree in Marshal'
+          'Click on Delete memo to remove the runtime object'
+          'Refresh the form in Marshal')
+        Align = Bottom
+        Position.Y = 336.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 94.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 380.000000000000000000
+        Viewport.Height = 94.000000000000000000
+      end
+    end
+    object tiFramed: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 67.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tiFramed'
+      ExplicitSize.cx = 67.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inline FramedFMX1: TFramedFMX
+        Align = Client
+        Size.Width = 380.000000000000000000
+        Size.Height = 360.000000000000000000
+        Size.PlatformDefault = False
+        inherited GridPanelLayout1: TGridPanelLayout
+          Size.Width = 380.000000000000000000
+          Size.Height = 360.000000000000000000
+          ControlCollection = <
+            item
+              Column = 0
+              Control = FramedFMX1.Edit1
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = FramedFMX1.Button1
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = FramedFMX1.FrameSubFramedFXM1
+              Row = 1
+            end>
+          inherited Edit1: TEdit
+            Position.X = 45.000000000000000000
+            Position.Y = 79.000000000000000000
+          end
+          inherited Button1: TButton
+            Position.X = 245.000000000000000000
+            Position.Y = 79.000000000000000000
+            OnClick = FramedFMX1Button1Click
+          end
+          inherited FrameSubFramedFXM1: TFrameSubFramedFXM
+            Size.Width = 190.000000000000000000
+            Size.Height = 180.000000000000000000
+            inherited GridPanelLayout1: TGridPanelLayout
+              Size.Width = 190.000000000000000000
+              Size.Height = 180.000000000000000000
+              ControlCollection = <
+                item
+                  Column = 0
+                  Control = FramedFMX1.FrameSubFramedFXM1.Label1
+                  Row = 0
+                end
+                item
+                  Column = 1
+                  Control = FramedFMX1.FrameSubFramedFXM1.Button1
+                  Row = 0
+                end
+                item
+                  Column = 0
+                  Control = FramedFMX1.FrameSubFramedFXM1.Edit1
+                  Row = 1
+                end
+                item
+                  Column = 1
+                  Control = FramedFMX1.FrameSubFramedFXM1.CheckBox1
+                  Row = 1
+                end>
+              inherited Label1: TLabel
+                Position.X = 22.500000000000000000
+                Position.Y = 36.500000000000000000
+                Size.Width = 50.000000000000000000
+              end
+              inherited Button1: TButton
+                Position.X = 117.500000000000000000
+                Position.Y = 34.000000000000000000
+                Size.Width = 50.000000000000000000
+                Size.PlatformDefault = False
+              end
+              inherited Edit1: TEdit
+                Position.X = 22.500000000000000000
+                Position.Y = 124.000000000000000000
+                Size.Width = 50.000000000000000000
+              end
+              inherited CheckBox1: TCheckBox
+                Position.X = 117.500000000000000000
+                Position.Y = 125.500000000000000000
+                Size.Width = 50.000000000000000000
+              end
+            end
+          end
+        end
+      end
+      object memoFramedMessage: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Bottom
+        Position.Y = 360.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 70.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 380.000000000000000000
+        Viewport.Height = 70.000000000000000000
+      end
+    end
+    object tiSalesData: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 72.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'SalesData'
+      ExplicitSize.cx = 72.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object StringGrid1: TStringGrid
+        Align = Client
+        CanFocus = True
+        ClipChildren = True
+        Size.Width = 380.000000000000000000
+        Size.Height = 430.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 376.000000000000000000
+        Viewport.Height = 405.000000000000000000
+      end
+    end
+  end
+  object SERTTKAppInspector1: TSERTTKAppInspectorFMX
+    FormWidth = 1024
+    FormHeight = 780
+    StartupDelay = 250
+    Left = 208
+    Top = 272
+  end
+  object Timer1: TTimer
+    Left = 144
+    Top = 224
+  end
+  object ActionList1: TActionList
+    Left = 152
+    Top = 232
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dmRTTK.FDMemTable
+    ScopeMappings = <>
+    Left = 160
+    Top = 240
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <>
+    end
+  end
+end

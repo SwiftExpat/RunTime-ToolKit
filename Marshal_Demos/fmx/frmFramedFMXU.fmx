@@ -1,0 +1,119 @@
+object FramedFMX: TFramedFMX
+  Align = Client
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object GridPanelLayout1: TGridPanelLayout
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 240.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ColumnCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = Edit1
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = Button1
+        Row = 0
+      end
+      item
+        Column = 0
+        ColumnSpan = 2
+        Control = FrameSubFramedFXM1
+        Row = 1
+      end>
+    RowCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = []
+      TabOrder = 0
+      Position.X = 30.000000000000000000
+      Position.Y = 49.000000000000000000
+    end
+    object Button1: TButton
+      Anchors = []
+      Position.X = 200.000000000000000000
+      Position.Y = 49.000000000000000000
+      TabOrder = 1
+      Text = 'Button1'
+    end
+    inline FrameSubFramedFXM1: TFrameSubFramedFXM
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      inherited GridPanelLayout1: TGridPanelLayout
+        Size.Width = 320.000000000000000000
+        Size.Height = 120.000000000000000000
+        ControlCollection = <
+          item
+            Column = 0
+            Control = FrameSubFramedFXM1.Label1
+            Row = 0
+          end
+          item
+            Column = 1
+            Control = FrameSubFramedFXM1.Button1
+            Row = 0
+          end
+          item
+            Column = 0
+            Control = FrameSubFramedFXM1.Edit1
+            Row = 1
+          end
+          item
+            Column = 1
+            Control = FrameSubFramedFXM1.CheckBox1
+            Row = 1
+          end>
+        inherited Label1: TLabel
+          Position.X = 40.000000000000000000
+          Position.Y = 21.500000000000000000
+          Size.Width = 80.000000000000000000
+          Size.PlatformDefault = False
+        end
+        inherited Button1: TButton
+          Position.X = 200.000000000000000000
+          Position.Y = 19.000000000000000000
+        end
+        inherited Edit1: TEdit
+          Position.X = 40.000000000000000000
+          Position.Y = 79.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.PlatformDefault = False
+        end
+        inherited CheckBox1: TCheckBox
+          Position.X = 200.000000000000000000
+          Position.Y = 80.500000000000000000
+          Size.Width = 80.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+  end
+  object Timer1: TTimer
+    Left = 144
+    Top = 104
+  end
+  object ActionList1: TActionList
+    Left = 152
+    Top = 112
+  end
+end

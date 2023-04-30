@@ -56,11 +56,16 @@
 *.projdata
 *.tvsconfig
 *.dsk
+*.stat
+*.delphilsp.json
+
 
 # Delphi history and backups
 __history/
 __recovery/
 *.~*
+OSX64/
+WIN32/
 
 # Castalia statistics file (since XE7 Castalia is distributed with Delphi)
 *.stat

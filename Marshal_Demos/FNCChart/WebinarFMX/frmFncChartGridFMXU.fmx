@@ -1,0 +1,941 @@
+object frmChartSalesFMX: TfrmChartSalesFMX
+  Left = 0
+  Top = 0
+  Caption = 'FMX Base From'
+  ClientHeight = 836
+  ClientWidth = 1124
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object GridPanelLayout1: TGridPanelLayout
+    Align = Client
+    Size.Width = 1124.000000000000000000
+    Size.Height = 836.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    ColumnCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 30.000000000000000000
+      end
+      item
+        Value = 20.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 2
+        Control = TMSFNCGrid1
+        Row = 1
+      end
+      item
+        Column = 0
+        ColumnSpan = 3
+        Control = TMSFNCBarChart1
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = ChartStackedArea
+        Row = 1
+      end
+      item
+        Column = 1
+        Control = TMSFNCSpiderChart1
+        Row = 1
+      end>
+    RowCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+    object TMSFNCGrid1: TTMSFNCGrid
+      Align = Client
+      Size.Width = 224.799987792968800000
+      Size.Height = 418.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      DefaultRowHeight = 40.000000000000000000
+      FixedColumns = 0
+      ColumnCount = 4
+      Options.Bands.Enabled = True
+      Options.Editing.CalcFormat = '%g'
+      Options.Grouping.CalcFormat = '%g'
+      Options.Grouping.GroupCountFormat = '(%d)'
+      Options.IO.XMLEncoding = 'ISO-8859-1'
+      Options.Mouse.ColumnSizing = True
+      Options.Mouse.ClickMargin = 0
+      Options.Mouse.ColumnSizeMargin = 6
+      Options.Mouse.RowSizeMargin = 6
+      Adapter = TMSFNCGridDatabaseAdapter1
+      Columns = <
+        item
+          BorderWidth = 1
+          FixedFont.Color = xFF454545
+          FixedFont.Name = 'Segoe UI'
+          FixedFont.StyleExt = {00070000000000000004000000}
+          Font.Color = xFF7A7A7A
+          Font.Name = 'Segoe UI'
+          ID = ''
+          Width = 70.000000000000000000
+        end
+        item
+          BorderWidth = 1
+          FixedFont.Color = xFF454545
+          FixedFont.Name = 'Segoe UI'
+          FixedFont.StyleExt = {00070000000000000004000000}
+          Font.Color = xFF7A7A7A
+          Font.Name = 'Segoe UI'
+          ID = ''
+          Width = 250.000000000000000000
+        end
+        item
+          BorderWidth = 1
+          FixedFont.Color = xFF454545
+          FixedFont.Name = 'Segoe UI'
+          FixedFont.StyleExt = {00070000000000000004000000}
+          Font.Color = xFF7A7A7A
+          Font.Name = 'Segoe UI'
+          ID = ''
+          Width = 100.000000000000000000
+        end
+        item
+          BorderWidth = 1
+          FixedFont.Color = xFF454545
+          FixedFont.Name = 'Segoe UI'
+          FixedFont.StyleExt = {00070000000000000004000000}
+          Font.Color = xFF7A7A7A
+          Font.Name = 'Segoe UI'
+          ID = ''
+          Width = 100.000000000000000000
+        end
+        item
+          BorderWidth = 1
+          FixedFont.Color = xFF454545
+          FixedFont.Name = 'Segoe UI'
+          FixedFont.StyleExt = {00070000000000000004000000}
+          Font.Color = xFF7A7A7A
+          Font.Name = 'Segoe UI'
+          ID = ''
+          Width = 90.000000000000000000
+        end>
+      Fill.Kind = gfkGradient
+      Fill.ColorTo = claKhaki
+      DefaultFont.Name = 'Segoe UI'
+      TopRow = 1
+      Appearance.FixedLayout.Fill.Color = xFFEEF2F9
+      Appearance.FixedLayout.Font.Size = 14.000000000000000000
+      Appearance.FixedLayout.Font.Color = xFF454545
+      Appearance.FixedLayout.Font.Name = 'Segoe UI'
+      Appearance.FixedLayout.Font.StyleExt = {00070000000000000004000000}
+      Appearance.NormalLayout.Fill.Kind = gfkGradient
+      Appearance.NormalLayout.Fill.Color = xFFF6F8FC
+      Appearance.NormalLayout.Fill.ColorTo = claPalegoldenrod
+      Appearance.NormalLayout.Font.Color = xFF7A7A7A
+      Appearance.NormalLayout.Font.Name = 'Segoe UI'
+      Appearance.GroupLayout.Fill.Color = xFF6E93C3
+      Appearance.GroupLayout.Font.Color = claWhite
+      Appearance.GroupLayout.Font.Name = 'Segoe UI'
+      Appearance.SummaryLayout.Fill.Color = xFFB9C5D5
+      Appearance.SummaryLayout.Font.Name = 'Segoe UI'
+      Appearance.SelectedLayout.Fill.Color = xFFBBDEFA
+      Appearance.SelectedLayout.Font.Color = xFF454545
+      Appearance.SelectedLayout.Font.Name = 'Segoe UI'
+      Appearance.FocusedLayout.Fill.Color = xFF74BDF4
+      Appearance.FocusedLayout.Font.Color = xFF454545
+      Appearance.FocusedLayout.Font.Name = 'Segoe UI'
+      Appearance.FixedSelectedLayout.Fill.Color = claLightsteelblue
+      Appearance.FixedSelectedLayout.Font.Name = 'Segoe UI'
+      Appearance.BandLayout.Fill.Kind = gfkGradient
+      Appearance.BandLayout.Fill.Color = xFFFFFFFE
+      Appearance.BandLayout.Fill.ColorTo = claNavajowhite
+      Appearance.BandLayout.Font.Color = xFF7A7A7A
+      Appearance.BandLayout.Font.Name = 'Segoe UI'
+      Appearance.ProgressLayout.Format = '%.0f%%'
+      LeftCol = 0
+      ScrollMode = scmItemScrolling
+      GlobalFont.Scale = 1.000000000000000000
+      GlobalFont.Style = []
+      DesignTimeSampleData = True
+      object TMSFNCGridDatabaseAdapter1: TTMSFNCGridDatabaseAdapter
+        Size.Width = 39.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        Position.X = 272.000000000000000000
+        Position.Y = 200.000000000000000000
+        Grid = TMSFNCGrid1
+        DataSource = dsSalesGrid
+        Columns = <>
+      end
+    end
+    object TMSFNCBarChart1: TTMSFNCBarChart
+      Appearance.ColorList = <
+        item
+          Color = xFF57C0F5
+        end
+        item
+          Color = xFFF71F56
+        end
+        item
+          Color = xFF031B79
+        end
+        item
+          Color = xFF954EBB
+        end
+        item
+          Color = xFFEEC713
+        end
+        item
+          Color = xFFF36042
+        end
+        item
+          Color = xFF2773FC
+        end
+        item
+          Color = xFFA1CF58
+        end
+        item
+          Color = xFF00A9A6
+        end
+        item
+          Color = xFF85E4F9
+        end>
+      Appearance.GlobalFont.Color = claNull
+      Appearance.GlobalFont.Scale = 1.000000000000000000
+      Appearance.GlobalFont.Style = []
+      Appearance.ColorScheme = ccsExcel
+      Appearance.MonochromeColor = claSteelblue
+      ClickMargin = 10.000000000000000000
+      Fill.Kind = gfkGradient
+      Fill.ColorTo = claLightcyan
+      Crosshair.Visible = True
+      Crosshair.Modes = [ccmPointBased]
+      Legend.Fill.Color = claGhostwhite
+      Legend.Stroke.Color = claGray
+      Legend.Font.Name = 'Segoe UI'
+      Legend.Left = 10.000000000000000000
+      Legend.Position = lpBottomRight
+      Legend.Top = 10.000000000000000000
+      Stroke.Color = claGray
+      SeriesMargins.Left = 0
+      SeriesMargins.Top = 0
+      SeriesMargins.Right = 0
+      SeriesMargins.Bottom = 0
+      Series = <>
+      Title.Fill.Kind = gfkNone
+      Title.Fill.Color = claGhostwhite
+      Title.Stroke.Color = claGray
+      Title.Font.Name = 'Segoe UI'
+      Title.Height = 35.000000000000000000
+      Title.TextHorizontalAlignment = gtaLeading
+      Title.TextMargins.Left = 3
+      Title.TextMargins.Top = 3
+      Title.TextMargins.Right = 3
+      Title.TextMargins.Bottom = 3
+      Title.Text = 
+        'Retail 3rd party sales totals of hand picked, cold pressed, firs' +
+        't harvest, extra virgin, low altitude, select premium, export qu' +
+        'ality, fresh packed, spanish olive oil by WeCanPressYourOlivesFr' +
+        'eshIt LLC exported and imported for your private label sales'
+      XAxis.Fill.Kind = gfkNone
+      XAxis.Fill.Color = claGhostwhite
+      XAxis.Stroke.Color = claGray
+      XAxis.Height = 35.000000000000000000
+      YAxis.Fill.Kind = gfkNone
+      YAxis.Fill.Color = claGhostwhite
+      YAxis.Stroke.Color = claGray
+      YAxis.Width = 35.000000000000000000
+      Adapter = chartDBAdaptStackedBar
+      DefaultLoadOptions.XValuesFormatString = '%.0f'
+      DefaultLoadOptions.YValuesFormatString = '%.2f'
+      DefaultLoadOptions.MaxYOffsetPercentage = 5.000000000000000000
+      OnLegendItemClick = TMSFNCBarChart1LegendItemClick
+      Align = Client
+      Size.Width = 1124.000000000000000000
+      Size.Height = 418.000000000000000000
+      Size.PlatformDefault = False
+      ClipChildren = True
+      DisableFocusEffect = False
+      TabOrder = 5
+      object chartDBAdaptStackedBar: TTMSFNCChartDatabaseAdapter
+        Size.Width = 39.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        Position.X = 288.000000000000000000
+        Position.Y = 216.000000000000000000
+        AutoCreateSeries = False
+        Source.DataSource = dsSalesBarChart
+        Source.Series = <
+          item
+            YValue = 'SA2018'
+            XValue = 'month'
+            XLabel = 'mdisp'
+          end
+          item
+            YValue = 'SA2019'
+            XValue = 'month'
+            XLabel = 'mdisp'
+          end
+          item
+            YValue = 'SA2020'
+            XValue = 'month'
+            XLabel = 'mdisp'
+          end>
+      end
+    end
+    object ChartStackedArea: TTMSFNCStackedAreaChart
+      Appearance.ColorList = <
+        item
+          Color = xFF57C0F5
+        end
+        item
+          Color = xFFF71F56
+        end
+        item
+          Color = xFF031B79
+        end
+        item
+          Color = xFF954EBB
+        end
+        item
+          Color = xFFEEC713
+        end
+        item
+          Color = xFFF36042
+        end
+        item
+          Color = xFF2773FC
+        end
+        item
+          Color = xFFA1CF58
+        end
+        item
+          Color = xFF00A9A6
+        end
+        item
+          Color = xFF85E4F9
+        end>
+      Appearance.GlobalFont.Color = claNull
+      Appearance.GlobalFont.Scale = 1.000000000000000000
+      Appearance.GlobalFont.Style = []
+      Appearance.ColorScheme = ccsExcel
+      Appearance.MonochromeColor = claSteelblue
+      ClickMargin = 10.000000000000000000
+      Fill.Kind = gfkGradient
+      Fill.ColorTo = claAntiquewhite
+      Legend.Fill.Color = claGhostwhite
+      Legend.Stroke.Color = claGray
+      Legend.Font.Name = 'Segoe UI'
+      Legend.Left = 10.000000000000000000
+      Legend.Top = 10.000000000000000000
+      Stroke.Color = claGray
+      SeriesMargins.Left = 0
+      SeriesMargins.Top = 0
+      SeriesMargins.Right = 0
+      SeriesMargins.Bottom = 0
+      Series = <
+        item
+          AnimationFactor = 4.000000000000000000
+          Bar.Width = 65.000000000000000000
+          Bar.Spacing = 20.000000000000000000
+          MultiPoint.Width = 65.000000000000000000
+          Pie.Size = 200.000000000000000000
+          Pie.Margins.Left = 10
+          Pie.Margins.Top = 10
+          Pie.Margins.Right = 10
+          Pie.Margins.Bottom = 10
+          Pie.SweepAngle = 360.000000000000000000
+          Enable3D = True
+          Fill.Color = xFF4472C4
+          Fill.Opacity = 0.500000000000000000
+          LegendText = 'Series 0'
+          Labels.Fill.Color = claGhostwhite
+          Labels.Font.Name = 'Segoe UI'
+          Labels.Format = '%.2f'
+          Labels.OffsetY = -10.000000000000000000
+          Labels.Stroke.Color = claGray
+          Markers.Fill.Color = xFF4472C4
+          Markers.Height = 10.000000000000000000
+          Markers.Stroke.Color = xFF223962
+          Markers.Width = 10.000000000000000000
+          MaxX = 10.000000000000000000
+          MaxY = 10.000000000000000000
+          Mode = smStatistical
+          Offset3DX = 15.000000000000000000
+          Offset3DY = 15.000000000000000000
+          Points = <>
+          Legend.Fill.Color = claGhostwhite
+          Legend.Font.Name = 'Segoe UI'
+          Legend.Left = -10.000000000000000000
+          Legend.Stroke.Color = claGray
+          Stroke.Color = xFF223962
+          XValues.MajorUnit = 1.000000000000000000
+          XValues.MajorUnitFont.Name = 'Segoe UI'
+          XValues.MajorUnitFormat = '%.0f'
+          XValues.MajorUnitSpacing = 5.000000000000000000
+          XValues.MajorUnitTickMarkSize = 10.000000000000000000
+          XValues.MajorUnitTickMarkColor = claSilver
+          XValues.MinorUnitFont.Name = 'Segoe UI'
+          XValues.MinorUnitFormat = '%.0f'
+          XValues.MinorUnitSpacing = 5.000000000000000000
+          XValues.MinorUnitTickMarkSize = 7.000000000000000000
+          XValues.MinorUnitTickMarkColor = claSilver
+          XValues.Title.Font.Name = 'Segoe UI'
+          XValues.Title.TextMargins.Left = 0
+          XValues.Title.TextMargins.Top = 0
+          XValues.Title.TextMargins.Right = 0
+          XValues.Title.TextMargins.Bottom = 0
+          XValues.Title.Text = 'X-Axis'
+          YValues.MajorUnit = 1.000000000000000000
+          YValues.MajorUnitFont.Name = 'Segoe UI'
+          YValues.MajorUnitFormat = '%.2f'
+          YValues.MajorUnitSpacing = 5.000000000000000000
+          YValues.MajorUnitTickMarkSize = 10.000000000000000000
+          YValues.MajorUnitTickMarkColor = claSilver
+          YValues.MinorUnitFont.Name = 'Segoe UI'
+          YValues.MinorUnitFormat = '%.2f'
+          YValues.MinorUnitSpacing = 5.000000000000000000
+          YValues.MinorUnitTickMarkSize = 7.000000000000000000
+          YValues.MinorUnitTickMarkColor = claSilver
+          YValues.Title.Font.Name = 'Segoe UI'
+          YValues.Title.TextMargins.Left = 0
+          YValues.Title.TextMargins.Top = 0
+          YValues.Title.TextMargins.Right = 0
+          YValues.Title.TextMargins.Bottom = 0
+          YValues.Title.Text = 'Y-Axis'
+          Crosshair.XTextStroke.Color = xFF4472C4
+          Crosshair.XTextFill.Color = xFF4472C4
+          Crosshair.XTextFont.Color = claWhite
+          Crosshair.XTextFont.Name = 'Segoe UI'
+          Crosshair.YTextStroke.Color = xFF4472C4
+          Crosshair.YTextFill.Color = xFF4472C4
+          Crosshair.YTextFont.Color = claWhite
+          Crosshair.YTextFont.Name = 'Segoe UI'
+          Crosshair.HorizontalLineStroke.Color = xFF4472C4
+          Crosshair.VerticalLineStroke.Color = xFF4472C4
+        end
+        item
+          AnimationFactor = 4.000000000000000000
+          Bar.Width = 65.000000000000000000
+          Bar.Spacing = 20.000000000000000000
+          MultiPoint.Width = 65.000000000000000000
+          Pie.Size = 200.000000000000000000
+          Pie.Margins.Left = 10
+          Pie.Margins.Top = 10
+          Pie.Margins.Right = 10
+          Pie.Margins.Bottom = 10
+          Pie.SweepAngle = 360.000000000000000000
+          Enable3D = True
+          Fill.Color = xFFED7D31
+          Fill.Opacity = 0.500000000000000000
+          LegendText = 'Series 1'
+          Labels.Fill.Color = claGhostwhite
+          Labels.Font.Name = 'Segoe UI'
+          Labels.Format = '%.2f'
+          Labels.OffsetY = -10.000000000000000000
+          Labels.Stroke.Color = claGray
+          Markers.Fill.Color = xFFED7D31
+          Markers.Height = 10.000000000000000000
+          Markers.Stroke.Color = xFF763E18
+          Markers.Width = 10.000000000000000000
+          MaxX = 10.000000000000000000
+          MaxY = 10.000000000000000000
+          Mode = smStatistical
+          Offset3DX = 15.000000000000000000
+          Offset3DY = 15.000000000000000000
+          Points = <>
+          Legend.Fill.Color = claGhostwhite
+          Legend.Font.Name = 'Segoe UI'
+          Legend.Left = -10.000000000000000000
+          Legend.Stroke.Color = claGray
+          Stroke.Color = xFF763E18
+          XValues.MajorUnit = 1.000000000000000000
+          XValues.MajorUnitFont.Name = 'Segoe UI'
+          XValues.MajorUnitFormat = '%.0f'
+          XValues.MajorUnitSpacing = 5.000000000000000000
+          XValues.MajorUnitTickMarkSize = 10.000000000000000000
+          XValues.MajorUnitTickMarkColor = claSilver
+          XValues.MinorUnitFont.Name = 'Segoe UI'
+          XValues.MinorUnitFormat = '%.0f'
+          XValues.MinorUnitSpacing = 5.000000000000000000
+          XValues.MinorUnitTickMarkSize = 7.000000000000000000
+          XValues.MinorUnitTickMarkColor = claSilver
+          XValues.Title.Font.Name = 'Segoe UI'
+          XValues.Title.TextMargins.Left = 0
+          XValues.Title.TextMargins.Top = 0
+          XValues.Title.TextMargins.Right = 0
+          XValues.Title.TextMargins.Bottom = 0
+          XValues.Title.Text = 'X-Axis'
+          YValues.MajorUnit = 1.000000000000000000
+          YValues.MajorUnitFont.Name = 'Segoe UI'
+          YValues.MajorUnitFormat = '%.2f'
+          YValues.MajorUnitSpacing = 5.000000000000000000
+          YValues.MajorUnitTickMarkSize = 10.000000000000000000
+          YValues.MajorUnitTickMarkColor = claSilver
+          YValues.MinorUnitFont.Name = 'Segoe UI'
+          YValues.MinorUnitFormat = '%.2f'
+          YValues.MinorUnitSpacing = 5.000000000000000000
+          YValues.MinorUnitTickMarkSize = 7.000000000000000000
+          YValues.MinorUnitTickMarkColor = claSilver
+          YValues.Title.Font.Name = 'Segoe UI'
+          YValues.Title.TextMargins.Left = 0
+          YValues.Title.TextMargins.Top = 0
+          YValues.Title.TextMargins.Right = 0
+          YValues.Title.TextMargins.Bottom = 0
+          YValues.Title.Text = 'Y-Axis'
+          Crosshair.XTextStroke.Color = xFFED7D31
+          Crosshair.XTextFill.Color = xFFED7D31
+          Crosshair.XTextFont.Color = claWhite
+          Crosshair.XTextFont.Name = 'Segoe UI'
+          Crosshair.YTextStroke.Color = xFFED7D31
+          Crosshair.YTextFill.Color = xFFED7D31
+          Crosshair.YTextFont.Color = claWhite
+          Crosshair.YTextFont.Name = 'Segoe UI'
+          Crosshair.HorizontalLineStroke.Color = xFFED7D31
+          Crosshair.VerticalLineStroke.Color = xFFED7D31
+        end
+        item
+          AnimationFactor = 4.000000000000000000
+          Bar.Width = 65.000000000000000000
+          Bar.Spacing = 20.000000000000000000
+          MultiPoint.Width = 65.000000000000000000
+          Pie.Size = 200.000000000000000000
+          Pie.Margins.Left = 10
+          Pie.Margins.Top = 10
+          Pie.Margins.Right = 10
+          Pie.Margins.Bottom = 10
+          Pie.SweepAngle = 360.000000000000000000
+          Enable3D = True
+          Fill.Color = xFFA5A5A5
+          Fill.Opacity = 0.500000000000000000
+          LegendText = 'Series 2'
+          Labels.Fill.Color = claGhostwhite
+          Labels.Font.Name = 'Segoe UI'
+          Labels.Format = '%.2f'
+          Labels.OffsetY = -10.000000000000000000
+          Labels.Stroke.Color = claGray
+          Markers.Fill.Color = xFFA5A5A5
+          Markers.Height = 10.000000000000000000
+          Markers.Stroke.Color = xFF525252
+          Markers.Width = 10.000000000000000000
+          MaxX = 10.000000000000000000
+          MaxY = 10.000000000000000000
+          Mode = smStatistical
+          Offset3DX = 15.000000000000000000
+          Offset3DY = 15.000000000000000000
+          Points = <>
+          Legend.Fill.Color = claGhostwhite
+          Legend.Font.Name = 'Segoe UI'
+          Legend.Left = -10.000000000000000000
+          Legend.Stroke.Color = claGray
+          Stroke.Color = xFF525252
+          XValues.MajorUnit = 1.000000000000000000
+          XValues.MajorUnitFont.Name = 'Segoe UI'
+          XValues.MajorUnitFormat = '%.0f'
+          XValues.MajorUnitSpacing = 5.000000000000000000
+          XValues.MajorUnitTickMarkSize = 10.000000000000000000
+          XValues.MajorUnitTickMarkColor = claSilver
+          XValues.MinorUnitFont.Name = 'Segoe UI'
+          XValues.MinorUnitFormat = '%.0f'
+          XValues.MinorUnitSpacing = 5.000000000000000000
+          XValues.MinorUnitTickMarkSize = 7.000000000000000000
+          XValues.MinorUnitTickMarkColor = claSilver
+          XValues.Title.Font.Name = 'Segoe UI'
+          XValues.Title.TextMargins.Left = 0
+          XValues.Title.TextMargins.Top = 0
+          XValues.Title.TextMargins.Right = 0
+          XValues.Title.TextMargins.Bottom = 0
+          XValues.Title.Text = 'X-Axis'
+          YValues.MajorUnit = 1.000000000000000000
+          YValues.MajorUnitFont.Name = 'Segoe UI'
+          YValues.MajorUnitFormat = '%.2f'
+          YValues.MajorUnitSpacing = 5.000000000000000000
+          YValues.MajorUnitTickMarkSize = 10.000000000000000000
+          YValues.MajorUnitTickMarkColor = claSilver
+          YValues.MinorUnitFont.Name = 'Segoe UI'
+          YValues.MinorUnitFormat = '%.2f'
+          YValues.MinorUnitSpacing = 5.000000000000000000
+          YValues.MinorUnitTickMarkSize = 7.000000000000000000
+          YValues.MinorUnitTickMarkColor = claSilver
+          YValues.Title.Font.Name = 'Segoe UI'
+          YValues.Title.TextMargins.Left = 0
+          YValues.Title.TextMargins.Top = 0
+          YValues.Title.TextMargins.Right = 0
+          YValues.Title.TextMargins.Bottom = 0
+          YValues.Title.Text = 'Y-Axis'
+          Crosshair.XTextStroke.Color = xFFA5A5A5
+          Crosshair.XTextFill.Color = xFFA5A5A5
+          Crosshair.XTextFont.Color = claWhite
+          Crosshair.XTextFont.Name = 'Segoe UI'
+          Crosshair.YTextStroke.Color = xFFA5A5A5
+          Crosshair.YTextFill.Color = xFFA5A5A5
+          Crosshair.YTextFont.Color = claWhite
+          Crosshair.YTextFont.Name = 'Segoe UI'
+          Crosshair.HorizontalLineStroke.Color = xFFA5A5A5
+          Crosshair.VerticalLineStroke.Color = xFFA5A5A5
+        end>
+      Title.Fill.Kind = gfkNone
+      Title.Fill.Color = claGhostwhite
+      Title.Stroke.Color = claGray
+      Title.Font.Name = 'Segoe UI'
+      Title.Height = 35.000000000000000000
+      Title.TextMargins.Left = 3
+      Title.TextMargins.Top = 3
+      Title.TextMargins.Right = 3
+      Title.TextMargins.Bottom = 3
+      Title.Text = 'Spanish Olive Oil by Month'
+      XAxis.Fill.Kind = gfkNone
+      XAxis.Fill.Color = claGhostwhite
+      XAxis.Stroke.Color = claGray
+      XAxis.Height = 35.000000000000000000
+      YAxis.Fill.Kind = gfkNone
+      YAxis.Fill.Color = claGhostwhite
+      YAxis.Stroke.Color = claGray
+      YAxis.Width = 35.000000000000000000
+      Adapter = chartDBAdaptStackedArea
+      DefaultLoadOptions.XValuesFormatString = '%.0f'
+      DefaultLoadOptions.YValuesFormatString = '%.2f'
+      DefaultLoadOptions.MaxYOffsetPercentage = 5.000000000000000000
+      OnLegendItemClick = ChartStackedAreaLegendItemClick
+      Align = Client
+      Size.Width = 562.000000000000000000
+      Size.Height = 418.000000000000000000
+      Size.PlatformDefault = False
+      ClipChildren = True
+      DisableFocusEffect = False
+      TabOrder = 6
+      object chartDBAdaptStackedArea: TTMSFNCChartDatabaseAdapter
+        Size.Width = 39.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        Position.X = 264.000000000000000000
+        Position.Y = 160.000000000000000000
+        AutoCreateSeries = False
+        Source.DataSource = dsSaleLines
+        Source.Series = <
+          item
+            YValue = 'SA2018'
+            XValue = 'month'
+            XLabel = 'mdisp'
+          end
+          item
+            YValue = 'SA2019'
+            XValue = 'month'
+            XLabel = 'mdisp'
+          end
+          item
+            YValue = 'SA2020'
+            XValue = 'month'
+            XLabel = 'mdisp'
+          end>
+        SkipFirstColumn = False
+        OnFieldsToSeries = chartDBAdaptStackedAreaFieldsToSeries
+      end
+    end
+    object TMSFNCSpiderChart1: TTMSFNCSpiderChart
+      Appearance.ColorList = <
+        item
+          Color = xFF57C0F5
+        end
+        item
+          Color = xFFF71F56
+        end
+        item
+          Color = xFF031B79
+        end
+        item
+          Color = xFF954EBB
+        end
+        item
+          Color = xFFEEC713
+        end
+        item
+          Color = xFFF36042
+        end
+        item
+          Color = xFF2773FC
+        end
+        item
+          Color = xFFA1CF58
+        end
+        item
+          Color = xFF00A9A6
+        end
+        item
+          Color = xFF85E4F9
+        end>
+      Appearance.GlobalFont.Color = claNull
+      Appearance.GlobalFont.Scale = 1.000000000000000000
+      Appearance.GlobalFont.Style = []
+      Appearance.ColorScheme = ccsExcel
+      Appearance.MonochromeColor = claSteelblue
+      ClickMargin = 10.000000000000000000
+      Fill.Kind = gfkGradient
+      Fill.ColorTo = claLightyellow
+      Crosshair.Modes = [ccmPointBased]
+      Legend.Fill.Color = claGhostwhite
+      Legend.Stroke.Color = claGray
+      Legend.Font.Name = 'Segoe UI'
+      Legend.Left = 10.000000000000000000
+      Legend.Top = 10.000000000000000000
+      Stroke.Color = claGray
+      SeriesMargins.Left = 0
+      SeriesMargins.Top = 20
+      SeriesMargins.Right = 0
+      SeriesMargins.Bottom = 20
+      Series = <>
+      Title.Fill.Kind = gfkNone
+      Title.Fill.Color = claLightyellow
+      Title.Stroke.Color = claGray
+      Title.Font.Name = 'Segoe UI'
+      Title.Height = 35.000000000000000000
+      Title.TextMargins.Left = 3
+      Title.TextMargins.Top = 3
+      Title.TextMargins.Right = 3
+      Title.TextMargins.Bottom = 3
+      Title.Text = 'Sales by Month Overlapped'
+      XAxis.Fill.Kind = gfkNone
+      XAxis.Fill.Color = claGhostwhite
+      XAxis.Stroke.Color = claGray
+      XAxis.Height = 35.000000000000000000
+      YAxis.Fill.Kind = gfkNone
+      YAxis.Fill.Color = claGhostwhite
+      YAxis.Stroke.Color = claGray
+      YAxis.AutoSize = False
+      YAxis.Border = True
+      YAxis.Width = 35.000000000000000000
+      Adapter = chartDBAdaptSpider
+      DefaultLoadOptions.XValuesFormatString = '%.0f'
+      DefaultLoadOptions.YValuesFormatString = '%.0f'
+      DefaultLoadOptions.MaxYOffsetPercentage = 5.000000000000000000
+      OnLegendItemClick = TMSFNCSpiderChart1LegendItemClick
+      Align = Client
+      Size.Width = 337.200012207031300000
+      Size.Height = 418.000000000000000000
+      Size.PlatformDefault = False
+      ClipChildren = True
+      DisableFocusEffect = False
+      TabOrder = 21
+      object chartDBAdaptSpider: TTMSFNCChartDatabaseAdapter
+        Size.Width = 39.000000000000000000
+        Size.Height = 39.000000000000000000
+        Size.PlatformDefault = False
+        Position.X = 272.000000000000000000
+        Position.Y = 168.000000000000000000
+        AutoCreateSeries = False
+        Source.DataSource = dsSalesSpider
+        Source.Series = <
+          item
+            YValue = 'SA2018'
+            XValue = 'month'
+            XLabel = 'mdisp'
+          end
+          item
+            YValue = 'SA2019'
+            XValue = 'month'
+            XLabel = 'mdisp'
+          end
+          item
+            YValue = 'SA2020'
+            XValue = 'month'
+            XLabel = 'mdisp'
+          end>
+        OnFieldsToSeries = chartDBAdaptSpiderFieldsToSeries
+        OnFieldsToPoint = chartDBAdaptSpiderFieldsToPoint
+      end
+    end
+  end
+  object tmrUpdateChart: TTimer
+    Enabled = False
+    Interval = 100
+    Left = 816
+    Top = 704
+  end
+  object dsSalesBarChart: TDataSource
+    DataSet = fdqSalesChart
+    Left = 640
+    Top = 464
+  end
+  object dsSalesGrid: TDataSource
+    DataSet = FDMemTableSalesGrid
+    Left = 776
+    Top = 464
+  end
+  object dsSalesPie: TDataSource
+    DataSet = fdqSalesPie
+    Left = 896
+    Top = 472
+  end
+  object FDConnection: TFDConnection
+    Params.Strings = (
+      'Database=:memory:'
+      'DriverID=SQLite')
+    Connected = True
+    LoginPrompt = False
+    AfterConnect = FDConnectionAfterConnect
+    Left = 673
+    Top = 737
+  end
+  object FDMemTableSalesGrid: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 776
+    Top = 560
+  end
+  object fdqSalesPie: TFDQuery
+    Connection = FDConnection
+    SQL.Strings = (
+      
+        'select year, sum(amount) as "Sales::Int32" from salesinfo group ' +
+        'by year')
+    Left = 904
+    Top = 568
+    object fdqSalesPieyear: TIntegerField
+      FieldName = 'year'
+      Origin = 'year'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object fdqSalesPieSales: TIntegerField
+      AutoGenerateValue = arDefault
+      FieldName = 'Sales'
+      Origin = 'Sales'
+      ProviderFlags = []
+      ReadOnly = True
+    end
+  end
+  object fdqSalesChart: TFDQuery
+    Connection = FDConnection
+    SQL.Strings = (
+      'select * from sales_chart')
+    Left = 632
+    Top = 568
+    object fdqSalesChartmonth: TIntegerField
+      FieldName = 'month'
+      Origin = 'month'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object fdqSalesChartSA2018: TBCDField
+      FieldName = 'SA2018'
+      Origin = 'SA2018'
+      Precision = 10
+      Size = 2
+    end
+    object fdqSalesChartSA2019: TBCDField
+      FieldName = 'SA2019'
+      Origin = 'SA2019'
+      Precision = 10
+      Size = 2
+    end
+    object fdqSalesChartSA2020: TBCDField
+      FieldName = 'SA2020'
+      Origin = 'SA2020'
+      Precision = 10
+      Size = 2
+    end
+    object fdqSalesChartmdisp: TStringField
+      FieldName = 'mdisp'
+    end
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 1016
+    Top = 760
+  end
+  object fdqSalesLines: TFDQuery
+    Connection = FDConnection
+    SQL.Strings = (
+      'select * from sales_chart')
+    Left = 992
+    Top = 568
+    object IntegerField1: TIntegerField
+      FieldName = 'month'
+      Origin = 'month'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object BCDField1: TBCDField
+      FieldName = 'SA2018'
+      Origin = 'SA2018'
+      Precision = 10
+      Size = 2
+    end
+    object BCDField2: TBCDField
+      FieldName = 'SA2019'
+      Origin = 'SA2019'
+      Precision = 10
+      Size = 2
+    end
+    object BCDField3: TBCDField
+      FieldName = 'SA2020'
+      Origin = 'SA2020'
+      Precision = 10
+      Size = 2
+    end
+    object StringField1: TStringField
+      FieldName = 'mdisp'
+    end
+  end
+  object dsSaleLines: TDataSource
+    DataSet = fdqSalesLines
+    Left = 984
+    Top = 472
+  end
+  object dsSalesSpider: TDataSource
+    DataSet = fdqSalesPieStacked
+    Left = 912
+    Top = 488
+  end
+  object fdqSalesPieStacked: TFDQuery
+    Connection = FDConnection
+    SQL.Strings = (
+      
+        'Select m.month, m.displayName as mdisp, s1.amount as SA2018, s2.' +
+        'amount as SA2019, s3.amount as SA2020 from Chart_Months m left j' +
+        'oin '
+      
+        ' sales_2018 s1 on m.month = s1.month left join sales_2019 s2 on ' +
+        'm.month = s2.month left join sales_2020 s3 on m.month = s3.month' +
+        ';')
+    Left = 1000
+    Top = 576
+    object IntegerField2: TIntegerField
+      FieldName = 'month'
+      Origin = 'month'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object BCDField4: TBCDField
+      FieldName = 'SA2018'
+      Origin = 'SA2018'
+      Precision = 10
+      Size = 2
+    end
+    object BCDField5: TBCDField
+      FieldName = 'SA2019'
+      Origin = 'SA2019'
+      Precision = 10
+      Size = 2
+    end
+    object BCDField6: TBCDField
+      FieldName = 'SA2020'
+      Origin = 'SA2020'
+      Precision = 10
+      Size = 2
+    end
+    object StringField2: TStringField
+      FieldName = 'mdisp'
+    end
+  end
+end

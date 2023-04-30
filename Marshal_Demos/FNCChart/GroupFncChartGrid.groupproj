@@ -1,0 +1,120 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6FE06F65-3763-40BE-8480-9DB17DA7176F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="WebinarFMX\FncChartFMXBase.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WebinarFMX\FncChartFMXMarshalButton.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WebinarFMX\FncChartFMXAppInspector.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WebinarFMX\FncChartFMXMarshalCoded.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WebinarVCL\FNChartVCLBase.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WebinarVCL\FNChartVCLMarshalCoded.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WebinarVCL\FNChartVCLAppInspector.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WebinarVCL\FNChartVCLMarshalButton.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FncChartFMXBase">
+        <MSBuild Projects="WebinarFMX\FncChartFMXBase.dproj"/>
+    </Target>
+    <Target Name="FncChartFMXBase:Clean">
+        <MSBuild Projects="WebinarFMX\FncChartFMXBase.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FncChartFMXBase:Make">
+        <MSBuild Projects="WebinarFMX\FncChartFMXBase.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FncChartFMXMarshalButton">
+        <MSBuild Projects="WebinarFMX\FncChartFMXMarshalButton.dproj"/>
+    </Target>
+    <Target Name="FncChartFMXMarshalButton:Clean">
+        <MSBuild Projects="WebinarFMX\FncChartFMXMarshalButton.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FncChartFMXMarshalButton:Make">
+        <MSBuild Projects="WebinarFMX\FncChartFMXMarshalButton.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FncChartFMXAppInspector">
+        <MSBuild Projects="WebinarFMX\FncChartFMXAppInspector.dproj"/>
+    </Target>
+    <Target Name="FncChartFMXAppInspector:Clean">
+        <MSBuild Projects="WebinarFMX\FncChartFMXAppInspector.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FncChartFMXAppInspector:Make">
+        <MSBuild Projects="WebinarFMX\FncChartFMXAppInspector.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FncChartFMXMarshalCoded">
+        <MSBuild Projects="WebinarFMX\FncChartFMXMarshalCoded.dproj"/>
+    </Target>
+    <Target Name="FncChartFMXMarshalCoded:Clean">
+        <MSBuild Projects="WebinarFMX\FncChartFMXMarshalCoded.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FncChartFMXMarshalCoded:Make">
+        <MSBuild Projects="WebinarFMX\FncChartFMXMarshalCoded.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FNChartVCLBase">
+        <MSBuild Projects="WebinarVCL\FNChartVCLBase.dproj"/>
+    </Target>
+    <Target Name="FNChartVCLBase:Clean">
+        <MSBuild Projects="WebinarVCL\FNChartVCLBase.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FNChartVCLBase:Make">
+        <MSBuild Projects="WebinarVCL\FNChartVCLBase.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FNChartVCLMarshalCoded">
+        <MSBuild Projects="WebinarVCL\FNChartVCLMarshalCoded.dproj"/>
+    </Target>
+    <Target Name="FNChartVCLMarshalCoded:Clean">
+        <MSBuild Projects="WebinarVCL\FNChartVCLMarshalCoded.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FNChartVCLMarshalCoded:Make">
+        <MSBuild Projects="WebinarVCL\FNChartVCLMarshalCoded.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FNChartVCLAppInspector">
+        <MSBuild Projects="WebinarVCL\FNChartVCLAppInspector.dproj"/>
+    </Target>
+    <Target Name="FNChartVCLAppInspector:Clean">
+        <MSBuild Projects="WebinarVCL\FNChartVCLAppInspector.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FNChartVCLAppInspector:Make">
+        <MSBuild Projects="WebinarVCL\FNChartVCLAppInspector.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FNChartVCLMarshalButton">
+        <MSBuild Projects="WebinarVCL\FNChartVCLMarshalButton.dproj"/>
+    </Target>
+    <Target Name="FNChartVCLMarshalButton:Clean">
+        <MSBuild Projects="WebinarVCL\FNChartVCLMarshalButton.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FNChartVCLMarshalButton:Make">
+        <MSBuild Projects="WebinarVCL\FNChartVCLMarshalButton.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FncChartFMXBase;FncChartFMXMarshalButton;FncChartFMXAppInspector;FncChartFMXMarshalCoded;FNChartVCLBase;FNChartVCLMarshalCoded;FNChartVCLAppInspector;FNChartVCLMarshalButton"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FncChartFMXBase:Clean;FncChartFMXMarshalButton:Clean;FncChartFMXAppInspector:Clean;FncChartFMXMarshalCoded:Clean;FNChartVCLBase:Clean;FNChartVCLMarshalCoded:Clean;FNChartVCLAppInspector:Clean;FNChartVCLMarshalButton:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FncChartFMXBase:Make;FncChartFMXMarshalButton:Make;FncChartFMXAppInspector:Make;FncChartFMXMarshalCoded:Make;FNChartVCLBase:Make;FNChartVCLMarshalCoded:Make;FNChartVCLAppInspector:Make;FNChartVCLMarshalButton:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

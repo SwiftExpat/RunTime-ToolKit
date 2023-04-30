@@ -1,0 +1,85 @@
+object FrameSubFramedFXM: TFrameSubFramedFXM
+  Align = Client
+  Size.Width = 514.000000000000000000
+  Size.Height = 372.000000000000000000
+  Size.PlatformDefault = False
+  object GridPanelLayout1: TGridPanelLayout
+    Align = Client
+    Size.Width = 514.000000000000000000
+    Size.Height = 372.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ColumnCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = Label1
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = Button1
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = Edit1
+        Row = 1
+      end
+      item
+        Column = 1
+        Control = CheckBox1
+        Row = 1
+      end>
+    RowCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+    object Label1: TLabel
+      Anchors = []
+      Position.X = 68.500000000000000000
+      Position.Y = 84.500000000000000000
+      Text = 'Sub framed Label'
+      TabOrder = 0
+    end
+    object Button1: TButton
+      Anchors = []
+      Position.X = 345.500000000000000000
+      Position.Y = 82.000000000000000000
+      TabOrder = 1
+      Text = 'Button1'
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = []
+      TabOrder = 2
+      Position.X = 78.500000000000000000
+      Position.Y = 268.000000000000000000
+      TextPrompt = 'Sub Framed Edit '
+    end
+    object CheckBox1: TCheckBox
+      Anchors = []
+      Position.X = 325.500000000000000000
+      Position.Y = 269.500000000000000000
+      TabOrder = 3
+      Text = 'CheckBox1'
+    end
+  end
+  object Timer1: TTimer
+    Left = 240
+    Top = 176
+  end
+  object ActionList1: TActionList
+    Left = 248
+    Top = 184
+  end
+end
