@@ -1,0 +1,23 @@
+.theme1 {
+  --border-radius: 5px;
+}
+
+#marshal-btn {
+data-bs-toggle :"tooltip";
+data-bs-placement : "bottom";
+data-bs-original-title :"Tooltip on bottom";
+}
+
+/* Page Control Tabs */
+#pageControl ul > li > a {
+
+  /* Rounded Top Corners */
+  border-top-left-radius:  var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+
+  /* Inactive Tabs */
+  background-color: rgb(244,144,124);
+}
+
+
+
